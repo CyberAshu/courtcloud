@@ -78,7 +78,8 @@ const TopNavbar = ({ activeModule, setActiveModule }) => {
         { path: '/jobs/resource-matching', name: 'Resource Matching Engine', icon: Search },
         { path: '/jobs/scheduled', name: 'Scheduled Jobs', icon: CheckCircle },
         { path: '/jobs/in-progress', name: 'In Progress Jobs', icon: Clock },
-        { path: '/jobs/completed', name: 'Completed Jobs', icon: CheckCircle }
+        { path: '/jobs/completed', name: 'Completed Jobs', icon: CheckCircle },
+        { path: '/jobs/cancelled-rescheduled', name: 'Cancelled / Rescheduled Jobs', icon: X }
       ]
     },
     { path: '/vendor-management', name: 'Vendor Management', icon: Building, hasSubmenu: false },

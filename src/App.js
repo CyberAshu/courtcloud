@@ -37,6 +37,7 @@ import ResourceMatchingEngine from './components/jobs/ResourceMatchingEngine';
 import ScheduledJobs from './components/jobs/ScheduledJobs';
 import InProgressJobs from './components/jobs/InProgressJobs';
 import CompletedJobs from './components/jobs/CompletedJobs';
+import CancelledRescheduledJobs from './components/jobs/CancelledRescheduledJobs';
 
 function App() {
   const [activeModule, setActiveModule] = useState('dashboard');
@@ -83,6 +84,7 @@ function App() {
             <Route path="/jobs/scheduled" element={<ScheduledJobs />} />
             <Route path="/jobs/in-progress" element={<InProgressJobs />} />
             <Route path="/jobs/completed" element={<CompletedJobs />} />
+            <Route path="/jobs/cancelled-rescheduled" element={<CancelledRescheduledJobs />} />
           </Routes>
         </main>
       </div>
