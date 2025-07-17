@@ -1,0 +1,172 @@
+{
+  "mattersByPracticeArea": [
+    { "name": "Litigation", "value": 45, "color": "#3b82f6" },
+    { "name": "Corporate", "value": 30, "color": "#10b981" },
+    { "name": "IP", "value": 15, "color": "#f59e0b" },
+    { "name": "Employment", "value": 10, "color": "#ef4444" }
+  ],
+  "mattersByStatus": [
+    { "name": "Open", "value": 35, "color": "#10b981" },
+    { "name": "In Progress", "value": 40, "color": "#3b82f6" },
+    { "name": "On Hold", "value": 15, "color": "#f59e0b" },
+    { "name": "Closed", "value": 10, "color": "#6b7280" }
+  ],
+  "jobsByType": [
+    { "name": "Reporting", "jobs": 45 },
+    { "name": "Translation", "jobs": 25 },
+    { "name": "Notary", "jobs": 20 },
+    { "name": "Other", "jobs": 15 }
+  ],
+  "invoiceAging": [
+    { "name": "0-30 days", "amount": 45000 },
+    { "name": "31-60 days", "amount": 25000 },
+    { "name": "60+ days", "amount": 12000 }
+  ],
+  "upcomingJobs": [
+    { "id": 1, "date": "2024-01-15", "type": "Deposition", "matter": "Smith v. Jones", "vendor": "ABC Court Reporting", "status": "Scheduled" },
+    { "id": 2, "date": "2024-01-16", "type": "Translation", "matter": "Johnson Case", "vendor": "XYZ Translation", "status": "Confirmed" },
+    { "id": 3, "date": "2024-01-17", "type": "Notary", "matter": "Estate Planning", "vendor": "Mobile Notary Plus", "status": "Pending" },
+    { "id": 4, "date": "2024-01-18", "type": "Reporting", "matter": "Wilson Litigation", "vendor": "Court Pros", "status": "Scheduled" },
+    { "id": 5, "date": "2024-01-19", "type": "Deposition", "matter": "Corporate Dispute", "vendor": "Elite Reporting", "status": "Confirmed" }
+  ],
+  "pendingInvoices": [
+    { "id": 1, "vendor": "ABC Court Reporting", "amount": 2500, "dueDate": "2024-01-20", "status": "Pending Approval" },
+    { "id": 2, "vendor": "XYZ Translation", "amount": 1200, "dueDate": "2024-01-22", "status": "Approved" },
+    { "id": 3, "vendor": "Mobile Notary Plus", "amount": 350, "dueDate": "2024-01-25", "status": "Overdue" },
+    { "id": 4, "vendor": "Court Pros", "amount": 1800, "dueDate": "2024-01-28", "status": "Pending Approval" }
+  ],
+  "topVendors": [
+    { "name": "ABC Court Reporting", "jobs": 45, "rating": 4.8 },
+    { "name": "XYZ Translation", "jobs": 32, "rating": 4.6 },
+    { "name": "Elite Reporting", "jobs": 28, "rating": 4.9 },
+    { "name": "Mobile Notary Plus", "jobs": 15, "rating": 4.7 },
+    { "name": "Court Pros", "jobs": 12, "rating": 4.5 }
+  ],
+  "complianceAlerts": [
+    { "type": "Expired Document", "vendor": "ABC Court Reporting", "item": "Insurance Certificate", "severity": "High" },
+    { "type": "Missing W-9", "vendor": "New Vendor Co", "item": "Tax Form", "severity": "Medium" },
+    { "type": "License Expiring", "vendor": "XYZ Translation", "item": "Certification", "severity": "Low" }
+  ],
+  "recentUploads": [
+    { "filename": "Deposition_Smith_v_Jones.pdf", "matter": "Smith v. Jones", "uploadedBy": "ABC Court Reporting", "time": "2 hours ago" },
+    { "filename": "Translation_Contract.docx", "matter": "Johnson Case", "uploadedBy": "XYZ Translation", "time": "4 hours ago" },
+    { "filename": "Notarized_Document.pdf", "matter": "Estate Planning", "uploadedBy": "Mobile Notary Plus", "time": "1 day ago" }
+  ],
+  "documentLibrary": [
+    {
+      "id": 1,
+      "filename": "Deposition_Smith_v_Jones.pdf",
+      "fileType": "PDF",
+      "fileSize": "2.4 MB",
+      "matter": "Smith v. Jones",
+      "matterNumber": "MT-2024-001",
+      "uploadedBy": "ABC Court Reporting",
+      "uploadedDate": "2024-01-20",
+      "category": "Deposition",
+      "tags": ["deposition", "testimony", "litigation"],
+      "status": "Final",
+      "version": "1.0",
+      "description": "Complete deposition transcript of John Smith",
+      "confidentiality": "Attorney-Client Privileged"
+    },
+    {
+      "id": 2,
+      "filename": "Translation_Contract.docx",
+      "fileType": "DOCX",
+      "fileSize": "156 KB",
+      "matter": "Johnson Case",
+      "matterNumber": "MT-2024-002",
+      "uploadedBy": "XYZ Translation",
+      "uploadedDate": "2024-01-19",
+      "category": "Translation",
+      "tags": ["translation", "contract", "foreign language"],
+      "status": "Final",
+      "version": "2.1",
+      "description": "Translated contract documents from Spanish to English",
+      "confidentiality": "Confidential"
+    },
+    {
+      "id": 3,
+      "filename": "Notarized_Document.pdf",
+      "fileType": "PDF",
+      "fileSize": "892 KB",
+      "matter": "Estate Planning",
+      "matterNumber": "MT-2024-006",
+      "uploadedBy": "Mobile Notary Plus",
+      "uploadedDate": "2024-01-18",
+      "category": "Notarization",
+      "tags": ["notarized", "estate", "will"],
+      "status": "Final",
+      "version": "1.0",
+      "description": "Notarized will and testament documents",
+      "confidentiality": "Attorney-Client Privileged"
+    }
+  ],
+  "matters": [
+    { 
+      "id": 1, 
+      "name": "Smith v. Jones", 
+      "matterNumber": "MT-2024-001",
+      "client": "John Smith", 
+      "status": "Open", 
+      "attorney": "Jane Doe",
+      "practiceArea": "Litigation",
+      "jurisdiction": "New York",
+      "dateCreated": "2024-01-15",
+      "lastActivity": "2024-01-20",
+      "description": "Personal injury case involving vehicle accident"
+    },
+    { 
+      "id": 2, 
+      "name": "Johnson Corp. Merger", 
+      "matterNumber": "MT-2024-002",
+      "client": "Johnson Corp.", 
+      "status": "In Progress", 
+      "attorney": "Bob Johnson",
+      "practiceArea": "Corporate",
+      "jurisdiction": "California",
+      "dateCreated": "2024-01-10",
+      "lastActivity": "2024-01-22",
+      "description": "Corporate merger and acquisition"
+    },
+    { 
+      "id": 3, 
+      "name": "Wilson v. State", 
+      "matterNumber": "MT-2024-003",
+      "client": "Wilson Estate", 
+      "status": "Closed", 
+      "attorney": "Alice Brown",
+      "practiceArea": "Criminal Defense",
+      "jurisdiction": "Texas",
+      "dateCreated": "2024-01-05",
+      "lastActivity": "2024-01-18",
+      "description": "Criminal defense case"
+    },
+    { 
+      "id": 4, 
+      "name": "Tech IP Patent", 
+      "matterNumber": "MT-2024-004",
+      "client": "Tech Innovations LLC", 
+      "status": "Open", 
+      "attorney": "Michael Davis",
+      "practiceArea": "IP",
+      "jurisdiction": "Delaware",
+      "dateCreated": "2024-01-12",
+      "lastActivity": "2024-01-21",
+      "description": "Patent application and IP protection"
+    },
+    { 
+      "id": 5, 
+      "name": "Employment Dispute", 
+      "matterNumber": "MT-2024-005",
+      "client": "Global Industries", 
+      "status": "On Hold", 
+      "attorney": "Sarah Wilson",
+      "practiceArea": "Employment",
+      "jurisdiction": "Florida",
+      "dateCreated": "2024-01-08",
+      "lastActivity": "2024-01-19",
+      "description": "Employment discrimination case"
+    }
+  ]
+}
